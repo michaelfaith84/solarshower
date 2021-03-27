@@ -7,8 +7,8 @@ const State = (props) => {
   const initialState = {
     gallons: 0,
     weight: 0,
-    lengths: {},
-    length: 0,
+    results: {},
+    result: 0,
   };
 
   const [state, dispatch] = useReducer(Reducer, initialState);
