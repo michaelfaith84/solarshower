@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Form from "./components/Form";
+import Header from "./components/Header";
+import { Container, Row, Col } from "react-bootstrap";
+import Result from "./components/Result";
+import React from "react";
+import Context from "./context/Context";
+import State from "./context/State";
+import Handler from "./components/Handler";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <State>
+      <div className="App">
+        <Container>
+          <Row>
+            <Col md={{ span: 8, offset: 2 }}>
+              <Header />
+              <Handler />
+            </Col>
+          </Row>
+        </Container>
+      </div>
+    </State>
   );
 }
 
