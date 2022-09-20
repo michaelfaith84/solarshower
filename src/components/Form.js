@@ -27,8 +27,6 @@ const Form = () => {
   const { time, rate } = values;
 
   const onChange = (e) => {
-    // const re = new RegExp("[-+]?[0-9]*\\.?[0-9]+");
-    // Not ideal
     const re = new RegExp(/^\d*\.?\d*/);
     const res = e.target.value.match(re) ? e.target.value.match(re)[0] : 0;
     setValues({ ...values, [e.target.name]: res });
