@@ -28,7 +28,7 @@ const About = (props) => {
         </p>
         <p>
           Why do I include small sizes? No one said you have to design the thing
-          as a a tube> A grid of smaller pipe, for example, would offer a
+          as a tube. A grid of smaller pipes, for example, would offer a
           greater surface area which would increase its thermal efficiency.
         </p>
         <p>
