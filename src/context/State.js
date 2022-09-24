@@ -27,8 +27,6 @@ const State = (props) => {
       { ID: 8, OD: 8.625, weight: 6.268 },
       { ID: 10, OD: 10.75, weight: 8.886 },
     ];
-    // Inner Diameters
-    const IDs = [2, 2.5, 3, 4, 5, 6, 8];
     // 231 in^3 == 1 gallon of water
     const volume = time * rate * 231;
     const gallons = (time * rate).toFixed(2);
@@ -42,13 +40,13 @@ const State = (props) => {
               2
             ),
             // A=2πrh+2πr2
-            SA: (
+            SA: ((
               2 *
                 Math.PI *
                 (0.5 * e.OD) *
-                (volume / (Math.PI * Math.pow(0.5 * e.ID, 2)) / 12) +
+                ((volume ) / (Math.PI * Math.pow(0.5 * e.ID, 2))  ) +
               2 * Math.PI * Math.pow(0.5 * e.OD, 2)
-            ).toFixed(2),
+            )/144).toFixed(2),
             PW: (
               (volume / (Math.PI * Math.pow(0.5 * e.ID, 2)) / 12) *
               e.weight

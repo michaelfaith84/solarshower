@@ -32,6 +32,10 @@ const About = (props) => {
           greater surface area which would increase its thermal efficiency.
         </p>
         <p>
+          The pipe's surface area is included to aid in the planning of painting to protect
+          the plastic and optimize thermal efficiency.
+        </p>
+        <p>
           I also include pipe weight (based on schedule 40) to help you
           calculate the total system weight.
         </p>

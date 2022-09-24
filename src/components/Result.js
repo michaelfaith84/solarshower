@@ -75,6 +75,14 @@ const Result = () => {
             </Row>
             <Row>
               <Col className="text-center">
+                <h4>Surface Area</h4>
+              </Col>
+            </Row>
+            <Row>
+              <Col className="text-center pb-3">{result.SA} ft<sup>2</sup></Col>
+            </Row>
+            <Row>
+              <Col className="text-center">
                 <h4>Weight</h4>
               </Col>
             </Row>
