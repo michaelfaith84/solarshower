@@ -32,10 +32,6 @@ const About = (props) => {
           greater surface area which would increase its thermal efficiency.
         </p>
         <p>
-          I include surface area to make it easier to buy paint to increase the
-          thermal efficiency of the unit.
-        </p>
-        <p>
           I also include pipe weight (based on schedule 40) to help you
           calculate the total system weight.
         </p>
